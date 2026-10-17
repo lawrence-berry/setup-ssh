@@ -1,5 +1,7 @@
 # setup-ssh
 
+<img src="public/icon.png" alt="" width="96">
+
 Shared SSH client defaults, kept out of `~/.ssh/config` so they can live in version control. Nothing personal here — no keys, hosts, or identities; those stay in your own `~/.ssh/config`.
 
 ## Install
