@@ -5,27 +5,17 @@
 <p align="center"><b>Shared SSH client defaults, kept out of ~/.ssh/config: no keys, hosts or identities.</b></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/macOS-27-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS 27" />
-  <img src="https://img.shields.io/badge/Linux-Ubuntu%2024.04-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Linux Ubuntu 24.04" />
-  <img src="https://img.shields.io/badge/Shell-POSIX%20sh-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Shell POSIX sh" />
+  <img src="https://img.shields.io/badge/macOS-27%20%C2%B7%20daily%20use-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS 27 · daily use" />
   <img src="https://img.shields.io/badge/OpenSSH-7.3%2B-000000?style=for-the-badge&logo=openssh&logoColor=white" alt="OpenSSH 7.3+" />
+  <img src="https://img.shields.io/badge/Shell-POSIX%20sh-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Shell POSIX sh" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/lawrence-berry/setup-ssh/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/lawrence-berry/setup-ssh/ci.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=CI" alt="CI status" /></a>
+  <a href="https://github.com/lawrence-berry/setup-ssh/actions/workflows/macos.yml"><img src="https://img.shields.io/github/actions/workflow/status/lawrence-berry/setup-ssh/macos.yml?branch=main&style=for-the-badge&logo=apple&logoColor=white&label=macOS%2015" alt="macOS 15 CI status" /></a>
+  <a href="https://github.com/lawrence-berry/setup-ssh/actions/workflows/linux.yml"><img src="https://img.shields.io/github/actions/workflow/status/lawrence-berry/setup-ssh/linux.yml?branch=main&style=for-the-badge&logo=ubuntu&logoColor=white&label=Ubuntu%2024.04" alt="Ubuntu 24.04 CI status" /></a>
 </p>
 
 Shared SSH client defaults, kept out of `~/.ssh/config` so they can live in version control. Nothing personal here — no keys, hosts, or identities; those stay in your own `~/.ssh/config`.
-
-## Supported versions
-
-| Component | Version | Status |
-|---|---|---|
-| macOS | 27 (Apple Silicon) | Used daily |
-| macOS | 15 | CI |
-| Ubuntu | 24.04 | CI |
-| OpenSSH | 7.3+ (`Include`); developed on 10.3 | Install re-run twice in CI, result checked |
-| Shell | `/bin/sh` (POSIX) | ShellCheck in CI |
 
 ## Install
 
