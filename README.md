@@ -15,7 +15,7 @@
   <a href="https://github.com/lawrence-berry/setup-ssh/actions/workflows/linux.yml"><img src="https://img.shields.io/github/actions/workflow/status/lawrence-berry/setup-ssh/linux.yml?branch=main&style=for-the-badge&logo=ubuntu&logoColor=white&label=Ubuntu%2024.04" alt="Ubuntu 24.04 CI status" /></a>
 </p>
 
-Shared SSH client defaults, kept out of `~/.ssh/config` so they can live in version control. Nothing personal here — no keys, hosts, or identities; those stay in your own `~/.ssh/config`.
+Shared SSH client defaults, kept out of `~/.ssh/config` so they can live in version control. Nothing personal is included (no keys, hosts or identities); those stay in `~/.ssh/config`.
 
 ## Install
 
@@ -27,7 +27,7 @@ Adds an `Include` of this repo's `config` to `~/.ssh/config` (creating it with t
 
 ## What it sets
 
-`Host *` defaults: no host-key prompts or `known_hosts` writes, and a keepalive so idle sessions don't drop. Turning off host-key checking globally trades away MITM protection — fine for throwaway LAN/VM hosts, worth narrowing if you SSH to things that matter.
+`Host *` defaults: no host-key prompts or `known_hosts` writes, and a keepalive so idle sessions don't drop. Turning off host-key checking globally trades away MITM protection. That suits throwaway LAN and VM hosts; narrow it to specific hosts when connecting to anything that matters.
 
 ## Tests
 
